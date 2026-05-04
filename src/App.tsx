@@ -49,21 +49,7 @@ export default function App() {
       </header>
       <main className="max-w-4xl mx-auto p-6">
         <Outlet />
-        <h2 className="text-xl font-semibold mb-4">
-          Bienvenue sur le projet Vinted Clone !
-        </h2>
-        <p className="text-gray-600 mb-2">
-          Ce scaffold contient tout le nécessaire pour démarrer. Consultez le
-          fichier <code className="bg-gray-200 px-1 rounded">CONSIGNES.md</code>{" "}
-          pour les instructions.
-        </p>
-        <p className="text-gray-500 text-sm mt-4">
-          La page « Mes annonces » sera vide au démarrage — c'est normal. Créez
-          votre première annonce pour la voir apparaître.
-        </p>
-        <p className="text-gray-400 text-xs mt-6">
-          Remplacez ce contenu par votre application.
-        </p>
+       
       </main>
     </div>
   );
