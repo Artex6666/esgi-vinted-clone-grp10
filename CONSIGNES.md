@@ -245,14 +245,14 @@ Les données sont **en mémoire** : elles sont réinitialisées à chaque redém
 
 **Critères de validation** :
 
-- [ ] La grille affiche les articles avec image, titre, prix formaté (ex : "12,50 €"), catégorie, état
-- [ ] La recherche filtre les articles en temps réel
-- [ ] Chaque filtre fonctionne individuellement
-- [ ] Les filtres se combinent correctement
-- [ ] Le tri change l'ordre d'affichage
-- [ ] Un état vide est affiché quand aucun résultat ne correspond
-- [ ] Un spinner s'affiche pendant le chargement
-- [ ] Un message d'erreur s'affiche si l'API ne répond pas
+- [x] La grille affiche les articles avec image, titre, prix formaté (ex : "12,50 €"), catégorie, état
+- [x] La recherche filtre les articles en temps réel
+- [x] Chaque filtre fonctionne individuellement
+- [x] Les filtres se combinent correctement
+- [x] Le tri change l'ordre d'affichage
+- [x] Un état vide est affiché quand aucun résultat ne correspond
+- [x] Un spinner s'affiche pendant le chargement
+- [x] Un message d'erreur s'affiche si l'API ne répond pas
 
 ### 6.2 Détail article (1 pt)
 
@@ -266,12 +266,12 @@ Les données sont **en mémoire** : elles sont réinitialisées à chaque redém
 
 **Critères de validation** :
 
-- [ ] Cliquer sur une carte du catalogue affiche la page de détail
-- [ ] Tous les champs de l'article sont affichés
-- [ ] La date est formatée en français (ex : "15/04/2026")
-- [ ] Le prix est formaté (ex : "25,00 €")
-- [ ] Un lien permet de revenir au catalogue
-- [ ] Un article inexistant affiche un message d'erreur
+- [x] Cliquer sur une carte du catalogue affiche la page de détail
+- [x] Tous les champs de l'article sont affichés
+- [x] La date est formatée en français (ex : "15/04/2026")
+- [x] Le prix est formaté (ex : "25,00 €")
+- [x] Un lien permet de revenir au catalogue
+- [x] Un article inexistant affiche un message d'erreur
 
 ### 6.3 Création d'annonce (2 pts)
 
@@ -333,12 +333,12 @@ Les données sont **en mémoire** : elles sont réinitialisées à chaque redém
 
 **Critères de validation** :
 
-- [ ] Un bouton favori est visible sur les cartes du catalogue
-- [ ] Cliquer ajoute/retire le favori (l'icône change)
-- [ ] La page Favoris liste les articles en favoris
-- [ ] Retirer un favori depuis la page Favoris met à jour la liste
-- [ ] L'état des favoris est cohérent entre le catalogue et la page Favoris
-- [ ] Un état vide est affiché quand il n'y a aucun favori
+- [x] Un bouton favori est visible sur les cartes du catalogue
+- [x] Cliquer ajoute/retire le favori (l'icône change)
+- [x] La page Favoris liste les articles en favoris
+- [x] Retirer un favori depuis la page Favoris met à jour la liste
+- [x] L'état des favoris est cohérent entre le catalogue et la page Favoris
+- [x] Un état vide est affiché quand il n'y a aucun favori
 
 ---
 

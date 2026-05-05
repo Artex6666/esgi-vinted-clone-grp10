@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Article } from "../types/article";
+import { CATEGORIES, CONDITIONS } from "../types/article";
 
 type ArticleCardProps = {
   article: Article;
@@ -12,6 +13,14 @@ function formatPrice(price: number) {
     style: "currency",
     currency: "EUR",
   }).format(price);
+}
+
+function categoryLabel(id: string) {
+  return CATEGORIES.find((c) => c.id === id)?.label ?? id;
+}
+
+function conditionLabel(value: string) {
+  return CONDITIONS.find((c) => c.value === value)?.label ?? value;
 }
 
 export function ArticleCard({
@@ -55,6 +64,10 @@ export function ArticleCard({
         <p className="mt-1 font-bold">{formatPrice(article.price)}</p>
 
         <p className="mt-2 text-sm text-gray-600">
+          {categoryLabel(article.category)} · {conditionLabel(article.condition)}
+        </p>
+
+        <p className="text-sm text-gray-600">
           Taille : {article.size}
         </p>
 
