@@ -377,11 +377,11 @@ Choisissez **au moins 2** fonctionnalités parmi les 4 suivantes. Chaque fonctio
 
 **Critères de validation** :
 
-- [ ] Cliquer sur "Modifier" ouvre le formulaire avec les valeurs actuelles
-- [ ] Modifier un champ et soumettre met à jour l'article
-- [ ] Après modification, la page de détail affiche les nouvelles valeurs
-- [ ] Tenter de modifier l'article de quelqu'un d'autre affiche un message d'erreur
-- [ ] Le composant de formulaire est partagé entre création et édition
+- [x] Cliquer sur "Modifier" ouvre le formulaire avec les valeurs actuelles
+- [x] Modifier un champ et soumettre met à jour l'article
+- [x] Après modification, la page de détail affiche les nouvelles valeurs
+- [x] Tenter de modifier l'article de quelqu'un d'autre affiche un message d'erreur
+- [x] Le composant de formulaire est partagé entre création et édition
 
 ### 7.3 Tests composants (1,5 pts)
 
@@ -418,10 +418,10 @@ Choisissez **au moins 2** fonctionnalités parmi les 4 suivantes. Chaque fonctio
 
 **Critères de validation** :
 
-- [ ] Redimensionner le navigateur à 375px de large : le contenu reste lisible et utilisable
-- [ ] La navigation fonctionne sur mobile
-- [ ] Les formulaires sont remplissables sur mobile
-- [ ] Les images ne débordent pas de l'écran
+- [x] Redimensionner le navigateur à 375px de large : le contenu reste lisible et utilisable
+- [x] La navigation fonctionne sur mobile
+- [x] Les formulaires sont remplissables sur mobile
+- [x] Les images ne débordent pas de l'écran
 
 ---
 

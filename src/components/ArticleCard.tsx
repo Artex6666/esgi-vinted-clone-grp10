@@ -7,6 +7,7 @@ type ArticleCardProps = {
   isFavorite?: boolean;
   onFavoriteClick?: () => void;
   onDeleteClick?: () => void;
+  onEditClick?: () => void;
 };
 
 function formatPrice(price: number) {
@@ -29,6 +30,7 @@ export function ArticleCard({
   isFavorite = false,
   onFavoriteClick,
   onDeleteClick,
+  onEditClick,
 }: ArticleCardProps) {
   return (
     <Link
@@ -77,18 +79,35 @@ export function ArticleCard({
           Vendeur : {article.userName}
         </p>
 
-        {onDeleteClick && (
-          <button
-            type="button"
-            onClick={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              onDeleteClick();
-            }}
-            className="mt-3 w-full rounded border border-red-500 px-3 py-1.5 text-sm font-semibold text-red-600 hover:bg-red-50"
-          >
-            Supprimer
-          </button>
+        {(onEditClick || onDeleteClick) && (
+          <div className="mt-3 flex flex-col gap-2">
+            {onEditClick && (
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  onEditClick();
+                }}
+                className="rounded-md bg-teal-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-teal-700"
+              >
+                Modifier
+              </button>
+            )}
+            {onDeleteClick && (
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  onDeleteClick();
+                }}
+                className="rounded-md bg-red-50 px-3 py-1.5 text-sm font-semibold text-red-700 hover:bg-red-100"
+              >
+                Supprimer
+              </button>
+            )}
+          </div>
         )}
       </div>
     </Link>

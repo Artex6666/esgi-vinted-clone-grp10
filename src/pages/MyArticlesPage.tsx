@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../services/api";
 import type { Article } from "../types/article";
@@ -8,6 +8,7 @@ import { ArticleCard } from "../components/ArticleCard";
 export default function MyArticlesPage() {
   const userId = useCurrentUserId();
   const queryClient = useQueryClient();
+  const navigate = useNavigate();
 
   const {
     data: articles = [],
@@ -75,6 +76,7 @@ export default function MyArticlesPage() {
             <ArticleCard
               key={article.id}
               article={article}
+              onEditClick={() => navigate(`/articles/${article.id}/edit`)}
               onDeleteClick={() => handleDelete(article)}
             />
           ))}

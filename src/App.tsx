@@ -4,11 +4,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-teal-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-          <NavLink to="/" className="text-2xl font-bold hover:text-teal-100">
+        <div className="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-y-2">
+          <NavLink to="/" className="text-xl sm:text-2xl font-bold hover:text-teal-100">
             Vinted Clone
           </NavLink>
-          <nav className="flex items-center gap-4 text-sm">
+          <nav className="flex flex-wrap items-center gap-3 sm:gap-4 text-sm">
             <NavLink
               to="/"
               end
