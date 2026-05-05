@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { api } from "../services/api";
 import type { Article } from "../types/article";
 import { CATEGORIES, CONDITIONS } from "../types/article";
@@ -43,6 +43,7 @@ export default function CataloguePage() {
       const query = params.toString();
       return api.get<Article[]>(`/api/articles${query ? `?${query}` : ""}`);
     },
+    placeholderData: keepPreviousData,
   });
 
   const { favorites, addFavorite, removeFavorite } = useFavorites();

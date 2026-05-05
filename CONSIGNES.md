@@ -289,12 +289,12 @@ Les données sont **en mémoire** : elles sont réinitialisées à chaque redém
 
 **Critères de validation** :
 
-- [ ] Le formulaire affiche tous les champs
-- [ ] Les catégories et états sont proposés en menu déroulant (issus de `CATEGORIES` et `CONDITIONS`)
-- [ ] Soumettre un formulaire vide affiche les erreurs de validation
-- [ ] Soumettre un formulaire valide crée l'article et redirige vers sa page de détail
-- [ ] L'article apparaît dans le catalogue après création
-- [ ] Une erreur API est affichée à l'utilisateur
+- [x] Le formulaire affiche tous les champs
+- [x] Les catégories et états sont proposés en menu déroulant (issus de `CATEGORIES` et `CONDITIONS`)
+- [x] Soumettre un formulaire vide affiche les erreurs de validation
+- [x] Soumettre un formulaire valide crée l'article et redirige vers sa page de détail
+- [x] L'article apparaît dans le catalogue après création
+- [x] Une erreur API est affichée à l'utilisateur
 
 ### 6.4 Mes annonces + suppression (1,5 pts)
 
@@ -310,12 +310,12 @@ Les données sont **en mémoire** : elles sont réinitialisées à chaque redém
 
 **Critères de validation** :
 
-- [ ] La page affiche uniquement les articles de l'utilisateur
-- [ ] La page est vide au démarrage (les articles du seed n'appartiennent pas à l'utilisateur)
-- [ ] Après création d'un article, il apparaît dans "Mes annonces"
-- [ ] Cliquer sur "Supprimer" demande confirmation (par ex. `window.confirm`)
-- [ ] Confirmer la suppression retire l'article de la liste
-- [ ] L'article supprimé n'apparaît plus dans le catalogue
+- [x] La page affiche uniquement les articles de l'utilisateur
+- [x] La page est vide au démarrage (les articles du seed n'appartiennent pas à l'utilisateur)
+- [x] Après création d'un article, il apparaît dans "Mes annonces"
+- [x] Cliquer sur "Supprimer" demande confirmation (par ex. `window.confirm`)
+- [x] Confirmer la suppression retire l'article de la liste
+- [x] L'article supprimé n'apparaît plus dans le catalogue
 
 ### 6.5 Favoris (2 pts)
 

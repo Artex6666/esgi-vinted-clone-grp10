@@ -6,6 +6,7 @@ type ArticleCardProps = {
   article: Article;
   isFavorite?: boolean;
   onFavoriteClick?: () => void;
+  onDeleteClick?: () => void;
 };
 
 function formatPrice(price: number) {
@@ -27,6 +28,7 @@ export function ArticleCard({
   article,
   isFavorite = false,
   onFavoriteClick,
+  onDeleteClick,
 }: ArticleCardProps) {
   return (
     <Link
@@ -74,6 +76,20 @@ export function ArticleCard({
         <p className="text-sm text-gray-500">
           Vendeur : {article.userName}
         </p>
+
+        {onDeleteClick && (
+          <button
+            type="button"
+            onClick={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              onDeleteClick();
+            }}
+            className="mt-3 w-full rounded border border-red-500 px-3 py-1.5 text-sm font-semibold text-red-600 hover:bg-red-50"
+          >
+            Supprimer
+          </button>
+        )}
       </div>
     </Link>
   );
